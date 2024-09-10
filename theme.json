@@ -15,17 +15,27 @@
         {
           "name": "Secondary",
           "slug": "secondary",
-          "color": "#14B8A6"
+          "color": "#526D82"
         },
         {
           "name": "Dark",
           "slug": "dark",
-          "color": "#1F2937"
+          "color": "#2C3333"
         },
         {
           "name": "Light",
           "slug": "light",
           "color": "#F9FAFB"
+        },
+        {
+          "name": "Light Blue",
+          "slug": "light-blue",
+          "color": "#6EACDA"
+        },
+        {
+          "name": "Darker Light Blue",
+          "slug": "darker-light-blue",
+          "color": "#9DB2BF"
         }
       ]
     },

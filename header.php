@@ -9,13 +9,13 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class( 'bg-white text-gray-900 antialiased' ); ?>>
+<body <?php body_class( 'bg-dark text-white antialiased' ); ?>>
 
-<?php do_action( 'tailpress_site_before' ); ?>
+<?php do_action( 'pekebyte_one_site_before' ); ?>
 
 <div id="page" class="min-h-screen flex flex-col">
 
-	<?php do_action( 'tailpress_header' ); ?>
+	<?php do_action( 'pekebyte_one_header' ); ?>
 
 	<header>
 
