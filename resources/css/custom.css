@@ -48,3 +48,17 @@ article > *:not(.entry-content),
 .cat-navigation a.active, .cat-navigation a:hover {
     @apply bg-white text-dark;
 }
+
+.portfolio-grid {
+
+    h2 {
+        @apply text-xl font-bold;
+    }
+}
+.changefill .svg {
+    fill: #6EACDA;
+}
+
+.changefill:hover .svg{
+    fill: white;
+}

@@ -8,7 +8,7 @@
 			$category_id = $category->term_id;
 			$categories = get_categories(array(
                 'taxonomy' => 'portfolio',
-				'orderby' => 'parent_id',
+				'orderby' => 'ID',
 				'order'   => 'ASC',
 				'hide_empty' => false
 			));
@@ -31,18 +31,28 @@
 			?>
 		</div>
 	<?php endif; ?>
+	<div class="my-14 grid grid-cols-1 md:grid-cols-3 gap-4 max-w-[960px] mx-auto portfolio-grid">
 	<?php if ( have_posts() ) : ?>
 		<?php
 		while ( have_posts() ) :
 			the_post();
 			?>
-
-			<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
-
+			<div id="work-<?php the_ID(); ?>" <?php post_class(); ?>>
+        		<a href="<?php echo esc_url(get_permalink()) ?>">
+            		<div>
+                		<div class="rounded-lg h-40 w-full relative overflow-hidden">
+                   			<?php echo get_the_post_thumbnail(get_the_ID(), 'post-thumbnail', 'class="object-cover min-h-full"') ?>
+                		</div>
+            		</div>
+       			 </a>
+				<div class="mt-2">
+					<a href="<?php echo esc_url(get_permalink()) ?>"><h2><?php echo get_the_title() ?></h2></a>
+					<div class="mt-3 text-sm"><?php the_excerpt() ?></div>
+                </div>
+    		</div>
 		<?php endwhile; ?>
-
 	<?php endif; ?>
-
+	</div>
 </div>
 
 <?php
