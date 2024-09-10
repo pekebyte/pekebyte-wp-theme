@@ -1,5 +1,5 @@
 # Pekebyte's Wordpress Theme
-Wordpress theme using Tailpress.io as a Boilerplate
+Wordpress that uses Tailpress.io as a Boilerplate
 
 <p><img src="http://tailpress.io/images/tailpress100.svg" width="260" alt="TailPress"></p>
 
