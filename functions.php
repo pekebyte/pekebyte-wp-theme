@@ -43,8 +43,8 @@ add_action( 'after_setup_theme', 'tailpress_setup' );
 function tailpress_enqueue_scripts() {
 	$theme = wp_get_theme();
 
-	wp_enqueue_style( 'pekebyte-one', tailpress_asset( 'css/app.css' ), array(), $theme->get( 'Version' ) );
-	wp_enqueue_script( 'pekebyte-one', tailpress_asset( 'js/app.js' ), array(), $theme->get( 'Version' ) );
+	wp_enqueue_style( 'pekebyte-one', pekebyte_one_asset( 'css/app.css' ), array(), $theme->get( 'Version' ) );
+	wp_enqueue_script( 'pekebyte-one', pekebyte_one_asset( 'js/app.js' ), array(), $theme->get( 'Version' ) );
 }
 
 add_action( 'wp_enqueue_scripts', 'tailpress_enqueue_scripts' );
@@ -56,7 +56,7 @@ add_action( 'wp_enqueue_scripts', 'tailpress_enqueue_scripts' );
  *
  * @return string
  */
-function tailpress_asset( $path ) {
+function pekebyte_one_asset( $path ) {
 	if ( wp_get_environment_type() === 'production' ) {
 		return get_stylesheet_directory_uri() . '/' . $path;
 	}
@@ -109,3 +109,70 @@ function tailpress_nav_menu_add_submenu_class( $classes, $args, $depth ) {
 }
 
 add_filter( 'nav_menu_submenu_css_class', 'tailpress_nav_menu_add_submenu_class', 10, 3 );
+
+/**
+ * Retrieve the last child category of a post given an post ID
+ * 
+ * @return WP_Term
+ */
+
+ function get_the_last_child_category($post_id) {
+	//Get all terms associated with post in taxonomy 'category'
+	$terms = get_the_terms($post_id,'category');
+	//Get an array of their IDs
+	$term_ids = wp_list_pluck($terms,'term_id');
+	//Get array of parents - 0 is not a parent
+	$parents = array_filter(wp_list_pluck($terms,'parent'));
+	//Get array of IDs of terms which are not parents.
+	$term_ids_not_parents = array_diff($term_ids,  $parents);
+	//Get corresponding term objects
+	$terms_not_parents = array_intersect_key($terms,  $term_ids_not_parents);
+	//Return the last category that doesn't have a parent
+	$cat = $terms_not_parents[count($term_ids_not_parents) - 1];
+	return $cat;
+ }
+
+
+/**
+ * Retrieve the icon of the post depending on the last category.
+ * 
+ * @return string
+ */
+
+function get_cat_icon($cat) {
+	$file = "";
+	switch($cat->slug) {
+		case "magento":
+			$file = pekebyte_one_asset("images/icons/magento.svg");
+			break;
+		case "wordpress":
+			$file = pekebyte_one_asset("images/icons/wordpress.svg");
+			break;
+		case "php":
+			$file = pekebyte_one_asset("images/icons/php.svg");
+			break;
+		default:
+			$file = "";
+		break;
+	}
+	return $file;
+}
+
+/**
+ * Retrieve the estimated reading time of a post
+ * 
+ * @return string
+ */
+function get_the_reading_time($post_id) {
+	$content = get_post_field( 'post_content', $post_id );
+	$word_count = str_word_count( strip_tags( $content ) );
+	$readingtime = ceil($word_count / 200);
+	
+	if ($readingtime == 1) {
+	$timer = __('minute');
+	} else {
+	$timer = __('minutes');
+	}
+	printf (__('Reading time %d %s'), $readingtime, $timer);
+	
+}
