@@ -23,18 +23,10 @@
 			<div class="lg:flex lg:justify-between lg:items-center border-b py-6">
 				<div class="flex justify-between items-center">
 					<div>
-						<?php if ( has_custom_logo() ) { ?>
-                            <?php the_custom_logo(); ?>
-						<?php } else { ?>
+
 							<a href="<?php echo get_bloginfo( 'url' ); ?>" class="font-extrabold text-lg uppercase">
-								<?php echo get_bloginfo( 'name' ); ?>
+								<img src="<?php echo pekebyte_one_asset( 'images/logo.svg' ); ?>" alt="Pekebyte Logo" class="max-w-[180px]" />
 							</a>
-
-							<p class="text-sm font-light text-gray-600">
-								<?php echo get_bloginfo( 'description' ); ?>
-							</p>
-
-						<?php } ?>
 					</div>
 
 					<div class="lg:hidden">

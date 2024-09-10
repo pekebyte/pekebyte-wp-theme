@@ -106,6 +106,9 @@
 .w-6 {
     width: 1.5rem
 }
+.w-\[60px\] {
+    width: 60px
+}
 .w-full {
     width: 100%
 }
@@ -114,6 +117,12 @@
 }
 .max-w-sm {
     max-width: 24rem
+}
+.max-w-\[60px\] {
+    max-width: 60px
+}
+.max-w-\[180px\] {
+    max-width: 180px
 }
 .flex-grow {
     flex-grow: 1
@@ -255,17 +264,9 @@
 .leading-tight {
     line-height: 1.25
 }
-.text-blue-500 {
-    --tw-text-opacity: 1;
-    color: rgb(59 130 246 / var(--tw-text-opacity))
-}
 .text-darker-light-blue {
     --tw-text-opacity: 1;
     color: rgb(157 178 191 / var(--tw-text-opacity))
-}
-.text-gray-600 {
-    --tw-text-opacity: 1;
-    color: rgb(75 85 99 / var(--tw-text-opacity))
 }
 .text-gray-800 {
     --tw-text-opacity: 1;
