@@ -5,8 +5,8 @@
 			/** In order to display the correct Icon will need the last category */
 			$last_child_category = get_the_last_child_category(get_the_ID());
 		?>
-		<div class="w-1/12 self-center md:self-auto"><img src="<?php echo get_cat_icon($last_child_category) ?>" alt="<?php printf( __( 'Image of category %s', 'pekebyte-one' ), $last_child_category->name ); ?>" /></div>
-		<div class="w-11/12 px-5 md:self-end">
+		<div class="w-1/12 self-center"><img src="<?php echo get_cat_icon($last_child_category) ?>" alt="<?php printf( __( 'Image of category %s', 'pekebyte-one' ), $last_child_category->name ); ?>" /></div>
+		<div class="w-11/12 px-5">
 			<?php the_title( sprintf( '<h1 class="entry-title text-2xl lg:text-5xl font-extrabold leading-tight mb-1"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 			<div class="w-full flex">
 				<time datetime="<?php echo get_the_date( 'c' ); ?>" itemprop="datePublished" class="text-sm text-darker-light-blue"><?php echo get_the_date(); ?></time>
@@ -16,7 +16,7 @@
 		</div>
 	</header>
 
-	<div class="entry-content">
+	<div class="entry-content max-w-[960px] mx-auto">
 		<?php the_content(); ?>
 
 		<?php

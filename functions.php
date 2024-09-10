@@ -42,9 +42,10 @@ add_action( 'after_setup_theme', 'pekebyte_one_setup' );
  */
 function pekebyte_one_enqueue_scripts() {
 	$theme = wp_get_theme();
-
 	wp_enqueue_style( 'pekebyte-one', pekebyte_one_asset( 'css/app.css' ), array(), $theme->get( 'Version' ) );
+	wp_enqueue_style( 'pekebyte-one-prism', pekebyte_one_asset( 'css/prisma.css' ), array('pekebyte-one'), $theme->get( 'Version' ) );
 	wp_enqueue_script( 'pekebyte-one', pekebyte_one_asset( 'js/app.js' ), array(), $theme->get( 'Version' ) );
+	wp_enqueue_script( 'pekebyte-one-prism', pekebyte_one_asset( 'js/prism.js' ), array('pekebyte-one'), $theme->get( 'Version' ) );
 }
 
 add_action( 'wp_enqueue_scripts', 'pekebyte_one_enqueue_scripts' );

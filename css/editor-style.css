@@ -103,6 +103,9 @@
 .w-full {
     width: 100%
 }
+.max-w-\[960px\] {
+    max-width: 960px
+}
 .max-w-sm {
     max-width: 24rem
 }
@@ -160,10 +163,6 @@
 .bg-gray-200 {
     --tw-bg-opacity: 1;
     background-color: rgb(229 231 235 / var(--tw-bg-opacity))
-}
-.bg-gray-50 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(249 250 251 / var(--tw-bg-opacity))
 }
 .bg-primary {
     --tw-bg-opacity: 1;
@@ -241,17 +240,9 @@
     --tw-text-opacity: 1;
     color: rgb(157 178 191 / var(--tw-text-opacity))
 }
-.text-gray-500 {
-    --tw-text-opacity: 1;
-    color: rgb(107 114 128 / var(--tw-text-opacity))
-}
 .text-gray-600 {
     --tw-text-opacity: 1;
     color: rgb(75 85 99 / var(--tw-text-opacity))
-}
-.text-gray-700 {
-    --tw-text-opacity: 1;
-    color: rgb(55 65 81 / var(--tw-text-opacity))
 }
 .text-gray-800 {
     --tw-text-opacity: 1;
