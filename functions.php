@@ -131,7 +131,7 @@ add_filter( 'nav_menu_submenu_css_class', 'pekebyte_one_nav_menu_add_submenu_cla
 	//Get corresponding term objects
 	$terms_not_parents = array_intersect_key($terms,  $term_ids_not_parents);
 	//Return the last category that doesn't have a parent
-	$cat = $terms_not_parents[count($term_ids_not_parents) - 1];
+	$cat = reset($terms_not_parents);
 	return $cat;
  }
 

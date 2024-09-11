@@ -47,6 +47,10 @@
     margin-left: auto;
     margin-right: auto
 }
+.my-10 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem
+}
 .my-14 {
     margin-top: 3.5rem;
     margin-bottom: 3.5rem
@@ -62,14 +66,6 @@
 .my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem
-}
-.my-0 {
-    margin-top: 0px;
-    margin-bottom: 0px
-}
-.my-10 {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem
 }
 .mb-1 {
     margin-bottom: 0.25rem
@@ -92,20 +88,17 @@
 .mr-5 {
     margin-right: 1.25rem
 }
-.mt-4 {
-    margin-top: 1rem
-}
-.mt-5 {
-    margin-top: 1.25rem
-}
 .mt-2 {
     margin-top: 0.5rem
 }
 .mt-3 {
     margin-top: 0.75rem
 }
-.ml-3 {
-    margin-left: 0.75rem
+.mt-4 {
+    margin-top: 1rem
+}
+.mt-5 {
+    margin-top: 1.25rem
 }
 .inline-block {
     display: inline-block
@@ -122,17 +115,17 @@
 .h-1 {
     height: 0.25rem
 }
-.h-6 {
-    height: 1.5rem
-}
 .h-40 {
     height: 10rem
 }
-.min-h-screen {
-    min-height: 100vh
+.h-6 {
+    height: 1.5rem
 }
 .min-h-full {
     min-height: 100%
+}
+.min-h-screen {
+    min-height: 100vh
 }
 .w-1\/12 {
     width: 8.333333%
@@ -157,15 +150,6 @@
 }
 .max-w-sm {
     max-width: 24rem
-}
-.max-w-\[40px\] {
-    max-width: 40px
-}
-.max-w-\[10px\] {
-    max-width: 10px
-}
-.max-w-\[20px\] {
-    max-width: 20px
 }
 .flex-grow {
     flex-grow: 1
@@ -200,12 +184,12 @@
 .gap-4 {
     gap: 1rem
 }
-.gap-6 {
-    gap: 1.5rem
+.gap-x-4 {
+    -moz-column-gap: 1rem;
+         column-gap: 1rem
 }
-.gap-x-\[40px\] {
-    -moz-column-gap: 40px;
-         column-gap: 40px
+.gap-y-12 {
+    row-gap: 3rem
 }
 .self-center {
     align-self: center
@@ -216,23 +200,24 @@
 .rounded {
     border-radius: 0.25rem
 }
-.rounded-md {
-    border-radius: 0.375rem
-}
 .rounded-lg {
     border-radius: 0.5rem
 }
-.rounded-sm {
-    border-radius: 0.125rem
-}
-.border-2 {
-    border-width: 2px
+.rounded-md {
+    border-radius: 0.375rem
 }
 .border {
     border-width: 1px
 }
+.border-2 {
+    border-width: 2px
+}
 .border-b {
     border-bottom-width: 1px
+}
+.border-light-blue {
+    --tw-border-opacity: 1;
+    border-color: rgb(110 172 218 / var(--tw-border-opacity))
 }
 .border-primary {
     --tw-border-opacity: 1;
@@ -241,10 +226,6 @@
 .border-white {
     --tw-border-opacity: 1;
     border-color: rgb(255 255 255 / var(--tw-border-opacity))
-}
-.border-light-blue {
-    --tw-border-opacity: 1;
-    border-color: rgb(110 172 218 / var(--tw-border-opacity))
 }
 .bg-dark {
     --tw-bg-opacity: 1;
@@ -344,13 +325,13 @@
     --tw-text-opacity: 1;
     color: rgb(31 41 55 / var(--tw-text-opacity))
 }
-.text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity))
-}
 .text-light-blue {
     --tw-text-opacity: 1;
     color: rgb(110 172 218 / var(--tw-text-opacity))
+}
+.text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity))
 }
 .underline {
     text-decoration-line: underline
@@ -427,14 +408,6 @@ body {
     --tw-bg-opacity: 1;
     background-color: rgb(82 109 130 / var(--tw-bg-opacity))
 }
-.hover\:bg-light-blue:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(110 172 218 / var(--tw-bg-opacity))
-}
-.hover\:text-dark:hover {
-    --tw-text-opacity: 1;
-    color: rgb(44 51 51 / var(--tw-text-opacity))
-}
 .hover\:text-white:hover {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity))
@@ -449,12 +422,6 @@ body {
     }
     .md\:w-1\/2 {
         width: 50%
-    }
-    .md\:w-3\/12 {
-        width: 25%
-    }
-    .md\:w-9\/12 {
-        width: 75%
     }
     .md\:grid-cols-3 {
         grid-template-columns: repeat(3, minmax(0, 1fr))

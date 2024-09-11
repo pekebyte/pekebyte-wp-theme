@@ -31,7 +31,7 @@
 			?>
 		</div>
 	<?php endif; ?>
-	<div class="my-14 grid grid-cols-1 md:grid-cols-3 gap-4 max-w-[960px] mx-auto portfolio-grid">
+	<div class="my-14 grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-12 max-w-[960px] mx-auto portfolio-grid">
 	<?php if ( have_posts() ) : ?>
 		<?php
 		while ( have_posts() ) :
