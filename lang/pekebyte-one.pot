@@ -1,0 +1,178 @@
+# Copyright (C) 2024 Jeffrey van Rossum
+# This file is distributed under the MIT.
+msgid ""
+msgstr ""
+"Project-Id-Version: Pekebyte One 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/pekebyte-one\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-09-11T12:56:58+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: pekebyte-one\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Pekebyte One"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://github.com/pekebyte"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Pekebyte Theme."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Jeffrey van Rossum"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://pekebyte.com"
+msgstr ""
+
+#: 404.php:16
+msgid "Sorry, the page you are looking for could not be found."
+msgstr ""
+
+#: 404.php:18
+msgid "Go Home"
+msgstr ""
+
+#: comments.php:18
+msgctxt "comments title"
+msgid "One comment"
+msgid_plural "%1$s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:43
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:47
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:53
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:62
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:11
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:175
+msgid "minute"
+msgstr ""
+
+#: functions.php:177
+msgid "minutes"
+msgstr ""
+
+#: functions.php:179
+msgid "Reading time %d %s"
+msgstr ""
+
+#: single-work.php:48
+msgid "Go to Production Site"
+msgstr ""
+
+#: single-work.php:59
+msgid "Go to Github Repo"
+msgstr ""
+
+#: taxonomy-portfolio.php:27
+msgid "All"
+msgstr ""
+
+#: template-parts/content-single.php:8
+#: template-parts/content.php:8
+msgid "Image of category %s"
+msgstr ""
+
+#: template-parts/content-single.php:25
+#: template-parts/content.php:33
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-single.php:29
+#: template-parts/content.php:37
+msgid "Page"
+msgstr ""
+
+#: template-parts/content.php:26
+msgid "Continue reading %s"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Light"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Light Blue"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Darker Light Blue"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Regular"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "XL"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "2XL"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "3XL"
+msgstr ""

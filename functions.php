@@ -33,6 +33,8 @@ function pekebyte_one_setup() {
 
 	add_theme_support( 'editor-styles' );
 	add_editor_style( 'css/editor-style.css' );
+	
+	load_theme_textdomain( 'pekebyte-one', get_template_directory() . '/lang' );
 }
 
 add_action( 'after_setup_theme', 'pekebyte_one_setup' );
@@ -172,10 +174,10 @@ function get_the_reading_time($post_id) {
 	$readingtime = ceil($word_count / 200);
 	
 	if ($readingtime == 1) {
-	$timer = __('minute');
+	$timer = __('minute', 'pekebyte-one');
 	} else {
-	$timer = __('minutes');
+	$timer = __('minutes', 'pekebyte-one');
 	}
-	printf (__('Reading time %d %s'), $readingtime, $timer);
+	printf (__('Reading time %d %s', 'pekebyte-one'), $readingtime, $timer);
 	
 }

@@ -24,7 +24,7 @@
 			<?php
 				else:
 			?>
-				<a href="<?php echo esc_url( $category_link ); ?>" class="<?php echo $additional_class; ?>"><?php echo __('All') ?></a>
+				<a href="<?php echo esc_url( $category_link ); ?>" class="<?php echo $additional_class; ?>"><?php echo __('All', 'pekebyte-one') ?></a>
 			<?php
 				endif;
 				endforeach;
