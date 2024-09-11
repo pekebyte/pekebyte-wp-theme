@@ -8,10 +8,10 @@
 		<div class="w-1/12 self-center md:self-auto"><img src="<?php echo get_cat_icon($last_child_category) ?>" alt="<?php printf( __( 'Image of category %s', 'pekebyte-one' ), $last_child_category->name ); ?>" /></div>
 		<div class="w-11/12 px-5 md:self-end">
 			<h2 class="entry-title text-2xl md:text-3xl font-extrabold leading-tight mb-1"><?php the_title() ?></h2>
-			<div class="w-full flex">
+			<div class="w-full flex flex-wrap">
 				<time datetime="<?php echo get_the_date( 'c' ); ?>" itemprop="datePublished" class="text-sm text-darker-light-blue"><?php echo get_the_date(); ?></time>
-				<div class="ml-2 text-sm text-darker-light-blue">-</div>
-				<div class="ml-2 text-sm text-darker-light-blue"><?php get_the_reading_time(get_the_ID()); ?></div>
+				<div class="w-full flex sm:w-auto"><div class="ml-2 hidden sm:block text-sm text-darker-light-blue">-</div>
+				<div class="sm:mt-0 sm:ml-2 text-sm text-darker-light-blue"><?php get_the_reading_time(get_the_ID()); ?></div></div>
 			</div>
 		</div>
 	</header></a>

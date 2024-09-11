@@ -2,7 +2,7 @@
 
 <div class="container mx-auto my-8">
 	<?php if (is_category()): ?>
-		<div class="w-full flex mb-10 cat-navigation">
+		<div class="w-full flex flex-wrap -mt-5 mb-10 cat-navigation">
 			<?php
 			$category = get_queried_object(); 
 			$category_id = $category->term_id; 

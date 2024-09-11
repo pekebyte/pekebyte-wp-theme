@@ -100,6 +100,12 @@
 .mt-5 {
     margin-top: 1.25rem
 }
+.-mt-5 {
+    margin-top: -1.25rem
+}
+.mt-1 {
+    margin-top: 0.25rem
+}
 .inline-block {
     display: inline-block
 }
@@ -196,6 +202,9 @@
 }
 .gap-y-12 {
     row-gap: 3rem
+}
+.gap-y-6 {
+    row-gap: 1.5rem
 }
 .self-center {
     align-self: center
@@ -418,6 +427,20 @@ body {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity))
 }
+@media (min-width: 600px) {
+    .sm\:ml-2 {
+        margin-left: 0.5rem
+    }
+    .sm\:mt-0 {
+        margin-top: 0px
+    }
+    .sm\:block {
+        display: block
+    }
+    .sm\:w-auto {
+        width: auto
+    }
+}
 @media (min-width: 782px) {
     .md\:my-6 {
         margin-top: 1.5rem;
@@ -428,6 +451,9 @@ body {
     }
     .md\:w-1\/2 {
         width: 50%
+    }
+    .md\:w-auto {
+        width: auto
     }
     .md\:grid-cols-3 {
         grid-template-columns: repeat(3, minmax(0, 1fr))
