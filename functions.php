@@ -45,7 +45,6 @@ add_action( 'after_setup_theme', 'pekebyte_one_setup' );
 function pekebyte_one_enqueue_scripts() {
 	$theme = wp_get_theme();
 	$version = $theme->get( 'Version' );
-	$version = time();
 	wp_enqueue_style( 'pekebyte-one', pekebyte_one_asset( 'css/app.css' ), array(), $version );
 	wp_enqueue_style( 'pekebyte-one-prism', pekebyte_one_asset( 'css/prisma.css' ), array('pekebyte-one'), $version );
 	wp_enqueue_script( 'pekebyte-one', pekebyte_one_asset( 'js/app.js' ), array(), $version );
