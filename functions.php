@@ -4,14 +4,7 @@ if (is_file(__DIR__.'/vendor/autoload_packages.php')) {
     require_once __DIR__.'/vendor/autoload_packages.php';
 }
 
-// Include custom post types
-require get_template_directory() . '/inc/custom-post-types.php';
-
-// Include custom fields setup
-require get_template_directory() . '/inc/custom-fields.php';
-
-
-function pekebyte(): TailPress\Framework\Theme
+function tailpress(): TailPress\Framework\Theme
 {
     return TailPress\Framework\Theme::instance()
         ->assets(fn($manager) => $manager
@@ -41,4 +34,4 @@ function pekebyte(): TailPress\Framework\Theme
         ]));
 }
 
-pekebyte();
+tailpress();
