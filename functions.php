@@ -10,7 +10,7 @@ require get_template_directory() . '/inc/custom-post-types.php';
 // Include custom fields setup
 require get_template_directory() . '/inc/custom-fields.php';
 
-function tailpress(): TailPress\Framework\Theme
+function pekebyte(): TailPress\Framework\Theme
 {
     return TailPress\Framework\Theme::instance()
         ->assets(fn($manager) => $manager
@@ -40,4 +40,4 @@ function tailpress(): TailPress\Framework\Theme
         ]));
 }
 
-tailpress();
+pekebyte();

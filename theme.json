@@ -11,12 +11,12 @@
         {
           "name": "Primary",
           "slug": "primary",
-          "color": "#2C7FFF"
+          "color": "#47a7eb"
         },
         {
-          "name": "Secondary",
-          "slug": "secondary",
-          "color": "#FD9A00"
+          "name": "pbgray",
+          "slug": "pbgray",
+          "color": "#627684"
         },
         {
           "name": "Dark",
