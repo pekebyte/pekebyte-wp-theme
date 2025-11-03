@@ -12,6 +12,7 @@ get_header();
 <div class="min-h-screen">
     <?php if (have_posts()): ?>
         <?php while (have_posts()): the_post(); ?>
+            <!-- Hero -->
             <?php
             $hero = get_field('hero');
             ?>
@@ -34,6 +35,17 @@ get_header();
                     </div>
                 </div>
             </section>
+            <!-- Hero -->
+            <!-- Columns -->
+            <?php
+            $columns = get_field('columns');
+            foreach ($columns as $column):
+            ?>
+
+            <?php
+            endforeach;
+            ?>
+            <!-- Columns -->
         <?php endwhile; ?>
     <?php endif; ?>
 </div>
