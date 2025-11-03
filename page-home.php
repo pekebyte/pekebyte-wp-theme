@@ -37,6 +37,7 @@ get_header();
             </section>
             <!-- Hero -->
             <!-- Columns -->
+            <section>
             <?php
             $columns = get_field('columns');
             foreach ($columns as $column):
@@ -45,6 +46,7 @@ get_header();
             <?php
             endforeach;
             ?>
+            </section>
             <!-- Columns -->
         <?php endwhile; ?>
     <?php endif; ?>
