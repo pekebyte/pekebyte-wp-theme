@@ -81,3 +81,11 @@
     margin-bottom: 0 !important;
   }
 }
+/** Buttons **/
+.button-primary {
+  @apply cursor-pointer inline-flex items-center justify-center whitespace-nowrap text-sm font-medium disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-white hover:bg-primary/90 h-11 rounded-md px-8 gap-2;
+}
+
+.button-secondary {
+  @apply inline-flex items-center justify-center whitespace-nowrap text-sm font-medium disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border  h-11 rounded-md px-8 gap-2;
+}

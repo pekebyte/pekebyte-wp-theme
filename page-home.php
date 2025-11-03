@@ -19,16 +19,16 @@ get_header();
                 <div class="container mx-auto px-4 relative z-10">
                     <div class="max-w-4xl mx-auto text-center">
                         <div class="inline-block mb-4">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/code-icon-home.svg" alt="icon" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/code-icon-home.svg" alt="icon" class="h-16" />
                         </div>
                         <h1 class="text-5xl md:text-7xl font-bold text-primary mb-6"><?php echo $hero['mainheading'] ?></h1>
-                        <p class="text-xl md:text-2xl text-pbgray mb-8"><?php echo $hero['subtitulo'] ?></p>
+                        <p class="text-xl md:text-2xl text-pekegray mb-8"><?php echo $hero['subtitulo'] ?></p>
                         <div class="flex flex-wrap gap-4 justify-center">
                             <a href=<?php echo $hero['boton_1']['url']; ?> <?php echo ($hero['boton_1']['target']!="" ? 'target="'.$hero['boton_1']['target'] : '') ?>>
-                                <button><?php echo $hero['boton_1']['title'] ?></button>
+                                <button class="button-primary"><?php echo $hero['boton_1']['title'] ?></button>
                             </a>
                             <a href=<?php echo $hero['boton_2']['url']; ?> <?php echo ($hero['boton_2']['target']!="" ? 'target="'.$hero['boton_2']['target'] : '') ?>>
-                                <button><?php echo $hero['boton_2']['title'] ?></button>
+                                <button class="button-secondary"><?php echo $hero['boton_2']['title'] ?></button>
                             </a>
                         </div>
                     </div>
