@@ -4,6 +4,28 @@ All notable changes to TailPress will be documented in this file.
 
 ## Unreleased
 
+## 5.0.0
+
+- Major update to default styling and template files
+- Vite as default compiler ([docs](https://tailpress.io/docs/5.0/vite))
+- Use composer autoloading
+- Use `tailpress/framework` package for theme setup
+- Improvement default comments styling
+- Adding `Pagination` class
+- Search bar in header
+- Create a ZIP-version of your theme ([docs](https://tailpress.io/docs/5.0/release#using-tailpress-cli))
+
+## 4.0.1
+
+- Update npm dependencies by @jeffreyvr in #269
+
+## 4.0.0
+
+- Adding Tailwind CSS v4 support by @jeffreyvr in #254
+- Add support for responsive embeds by @brendannee in #217
+
+## 3.4.0
+
 - Use `mix.options({ manifest: false })` instead of deprecated `Mix.manifest.refresh = _ => void 0`
 
 ## 3.3.0
@@ -38,8 +60,8 @@ All notable changes to TailPress will be documented in this file.
 - Switching to Tailwind CLI and esbuild instead of LaraveL Mix.
 - Removing `theme` subdirectory setup as it is no longer needed with the new build setup.
 - Removing `TailPress` class and it's functions (`tailpress()->get_header()` etc.) throughout the theme.
-- New `pekebyte_one_asset` function to get the URL of an asset (previously `pekebyte_one_mix`).
-- `pekebyte_one_asset` function thaty appends a `time` parameter if [wp_get_environment_type()](https://developer.wordpress.org/reference/functions/wp_get_environment_type/) does not return `production` for cache busting (instead of the previously used versioned assets through `mix-manifest.json`).
+- New `tailpress_asset` function to get the URL of an asset (previously `tailpress_mix`).
+- `tailpress_asset` function thaty appends a `time` parameter if [wp_get_environment_type()](https://developer.wordpress.org/reference/functions/wp_get_environment_type/) does not return `production` for cache busting (instead of the previously used versioned assets through `mix-manifest.json`).
 - Update screenshot.png.
 - Remove `block-editor.css`, only use `editor-style.css`.
 - Moving `editor-style.css` from root to `css` directory.
