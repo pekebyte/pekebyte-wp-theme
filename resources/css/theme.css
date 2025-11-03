@@ -24,4 +24,7 @@
     --text-7xl: var(--wp--preset--font-size--7-xl, 4.5rem);
     --text-8xl: var(--wp--preset--font-size--8-xl, 6rem);
     --text-9xl: var(--wp--preset--font-size--9-xl, 8rem);
+
+    --font-poppins: 'Poppins', sans-serif;
+    --font-fira: 'Fira Code', monospace;
 }
