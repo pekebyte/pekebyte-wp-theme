@@ -1,22 +1,20 @@
-<p align="center"><a href="https://tailpress.io" target="_blank"><img src="https://raw.githubusercontent.com/tailpress/art/main/logo.svg" width="200" alt="TailPress"></a></p>
+# PekeByte WordPress Theme
 
-<p align="center">
-<a href="https://github.com/tailpress/tailpress/releases/"><img src="https://img.shields.io/github/release/tailpress/tailpress?include_prereleases=&sort=semver" alt="GitHub release"></a>
-<a href="https://packagist.org/packages/tailpress/tailpress"><img src="https://img.shields.io/packagist/dt/tailpress/tailpress" alt="Total Downloads"></a>
-<a href="#license"><img src="https://img.shields.io/badge/License-MIT-blue" alt="License"></a>
-</p>
+Tema de WordPress completo basado en el diseño de tu aplicación React.
 
-## About TailPress
+## Instalación
 
-[TailPress](https://tailpress.io) is your go-to starting point for your next [Tailwind CSS](https://tailwindcss.com) powered [WordPress](https://wordpress.org) theme.
+1. Sube la carpeta `wordpress-theme` a `/wp-content/themes/` en tu WordPress
+2. Renombra la carpeta a `pekebyte` 
+3. Activa el tema desde Apariencia > Temas
+4. Instala y activa **Advanced Custom Fields** (requerido)
+5. Ve a Ajustes > Enlaces permanentes y guarda cambios
 
-To get started, have a look at the [documentation](https://tailpress.io/docs).
+## Archivos incluidos
 
-## Contributors
+- `style.css` - Hoja de estilos principal con header del tema
+- `functions.php` - Custom Post Types y configuración
+- `index.php`, `header.php`, `footer.php` - Templates principales
+- Templates de páginas y custom post types
 
-- [Jeffrey van Rossum](https://github.com/jeffreyvr)
-- [All contributors](https://github.com/tailpress/tailpress/graphs/contributors)
-
-## License
-
-MIT. Please see the [License File](/LICENSE) for more information.
+Revisa los demás archivos PHP para la implementación completa.

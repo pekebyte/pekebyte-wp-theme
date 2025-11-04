@@ -1,27 +1,32 @@
-<?php
-/**
- * Theme footer template.
- *
- * @package TailPress
- */
-?>
-        </main>
+  </div><!-- #content -->
 
-        <?php do_action('tailpress_content_end'); ?>
-    </div>
-
-    <?php do_action('tailpress_content_after'); ?>
-
-    <footer id="colophon" class="bg-light/50 mt-12" role="contentinfo">
-        <div class="container mx-auto py-12">
-            <?php do_action('tailpress_footer'); ?>
-            <div class="text-sm text-zinc-700">
-                &copy; <?php echo esc_html(date_i18n('Y')); ?> - <?php bloginfo('name'); ?>
-            </div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3><?php bloginfo('name'); ?></h3>
+          <p><?php bloginfo('description'); ?></p>
         </div>
-    </footer>
-</div>
 
-<?php wp_footer(); ?>
+        <div class="footer-social">
+          <?php
+          $social = array('github', 'linkedin', 'twitter', 'youtube');
+          foreach ($social as $network) {
+            $url = get_theme_mod('pekebyte_' . $network);
+            if ($url) {
+              echo '<a href="' . esc_url($url) . '" target="_blank">' . ucfirst($network) . '</a>';
+            }
+          }
+          ?>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <?php wp_footer(); ?>
 </body>
 </html>
